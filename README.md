@@ -1,5 +1,5 @@
 MCPI - Monte Carlo estimation of Pi using numpy, numba, dpnp, numba-dpex
-************************************************************************
+========================================================================
 
 This is a "Hello, World" application in Monte Carlo methods. It stresses random number generation along with some other math required for implementation of the Acceptance-Rejection technique.
 
