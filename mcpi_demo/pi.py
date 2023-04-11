@@ -9,9 +9,9 @@ def main():
     n_batches = args.n_batches
     print(f"Estimating Pi with {args.variant} for {n_batches} batches of size {batch_size}...")
     t1 = time.time()
-    pi = monte_carlo_pi(batch_size, n_batches)
+    pi, pi_std = monte_carlo_pi(batch_size, n_batches)
     t2 = time.time()
-    print("Pi =", pi)
+    print(f"Pi={pi}, std={pi_std}")
     print("Done in ", t2 - t1, "seconds...")
 
 
