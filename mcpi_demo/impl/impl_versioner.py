@@ -1,7 +1,6 @@
 import numpy as np
 
 from mcpi_demo.impl.arg_parser import parse_args
-from math import sqrt
 
 RUN_VERSION = parse_args().variant
 
