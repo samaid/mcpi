@@ -14,19 +14,6 @@ def parse_args(argv=None):
         choices=["numpy", "numba", "dpnp", "numba-dpex"],
         default="numpy",
     )
-    parser.add_argument(
-        "--parallel",
-        help="Keyword argument parallel= for @njit. Used along with --variant numba. Default --no-parallel",
-        action=argparse.BooleanOptionalAction,
-        default=False,
-    )
-    parser.add_argument(
-        "--gui",
-        help="Render the evolution of the grid or do computation only and "
-        "print statistics in the end. Default --no-gui",
-        action=argparse.BooleanOptionalAction,
-        default=False,
-    )
     batch_size = 102400000
     parser.add_argument(
         "--batch-size",
@@ -42,5 +29,5 @@ def parse_args(argv=None):
         default=int(f"{n_batches}"),
     )
 
-    args, _ = parser.parse_known_args(argv)
+    args = parser.parse_args(argv)
     return args
