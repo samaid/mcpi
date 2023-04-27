@@ -7,8 +7,8 @@ on:
   pull_request:
 
 env:
-  PACKAGE_NAME: demo_pkg
-  MODULE_NAME: demo_module
+  PACKAGE_NAME: mcpi-demo
+  MODULE_NAME: mcpi_demo
 
 jobs:
   build_linux:
