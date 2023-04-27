@@ -31,7 +31,7 @@ test:
     - mcpi --batch-size 10 --n-batches 1
   imports:
     - mcpi_demo
-    - mcpi_demo.impl_versioner
+    - mcpi_demo.impl.impl_versioner
     - mcpi_demo.impl.arg_parser
 
 about:
