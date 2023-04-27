@@ -63,7 +63,7 @@ jobs:
         runner: [ubuntu-20.04]
     continue-on-error: ${{ matrix.experimental }}
     env:
-      CHANNELS: -c dppy/label/dev -c intel --override-channels
+      CHANNELS: -c dppy/label/dev -c intel -c main --override-channels
 
     steps:
       - uses: actions/checkout@v3
@@ -199,7 +199,7 @@ jobs:
     continue-on-error: ${{ matrix.experimental }}
     env:
       workdir: '${{ github.workspace }}'
-      CHANNELS: -c dppy/label/dev -c intel --override-channels
+      CHANNELS: -c dppy/label/dev -c intel -c main --override-channels
     steps:
       - name: Checkout sources
         uses: actions/checkout@v3
