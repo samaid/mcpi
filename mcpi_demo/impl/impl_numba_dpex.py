@@ -1,5 +1,6 @@
 import dpnp as np
-from numba_dpex import dpjit, prange
+from numba_dpex import dpjit
+from numba_dpex import prange
 
 
 @dpjit(parallel=True)
