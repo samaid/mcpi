@@ -268,6 +268,9 @@ jobs:
           # Check the variable assisting OpenCL CPU driver to find TBB DLLs which are not located where it expects them by default
           $cl_cfg="$env:CONDA_PREFIX\Library\lib\cl.cfg"
           Get-Content -Tail 5 -Path $cl_cfg
+      - name: Conda list
+        shell: cmd /C CALL {0}
+        run: conda list -n test-env
       - name: Run tests
         shell: pwsh
         run: |
