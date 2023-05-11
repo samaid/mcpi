@@ -23,3 +23,7 @@ The following options are allowed:
 * `--variant [numpy, numba, dpnp, numba-dpex]` (default `numpy`): Implementation variant
 * `--batch-size`: Number of trial points in the batch
 * `--n-batches`:  Number of batches
+
+## Jupyter Notebook
+The Monte Carlo Pi demo is also supplemented with the [Juoyter Notebook](https://github.com/samaid/mcpi/blob/main/mcpi.ipynb),
+where step by step we illustrate the idea of the algorithm.
